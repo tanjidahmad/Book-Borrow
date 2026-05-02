@@ -3,6 +3,8 @@ import { authClient } from "@/lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaBook } from "react-icons/fa";
+
 
 const Navbar = () => {
   const userData = authClient.useSession();
@@ -15,17 +17,10 @@ const Navbar = () => {
   return (
     <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-        <div className="flex gap-2 items-center">
-          <Image
-            src={"/logo.png"}
-            alt="logo"
-            loading="eager"
-            width={30}
-            height={30}
-            className="object-cover h-auto w-auto"
-          />
-          <h3 className="font-black text-lg">pixgen.</h3>
-        </div>
+       <Link href="/" className="flex gap-2 items-center">
+  <FaBook className="text-green-600 text-xl" />
+  <h3 className="font-black text-lg">BookNest</h3>
+</Link>
 
         <ul className="flex items-center gap-5 text-sm">
           <li>
