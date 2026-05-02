@@ -27,6 +27,14 @@ export default function SignInPage() {
       callbackURL: "/",
     });
 
+     if (error) {
+    alert(error.message);
+  }
+
+  if (data) {
+    console.log("Login success");
+  }
+
     console.log({ data, error });
   };
 
@@ -96,7 +104,7 @@ export default function SignInPage() {
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Submit
+            Login
           </Button>
           <Button type="reset" variant="secondary">
             Reset
