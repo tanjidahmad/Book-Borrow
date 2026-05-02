@@ -63,11 +63,7 @@ const Banner = () => {
               </Button>
             </Link>
 
-            <Link href="/library">
-              <Button variant="outline" className="text-white">
-                Visit Library
-              </Button>
-            </Link>
+           
           </div>
         </div>
       </div>
