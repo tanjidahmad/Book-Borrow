@@ -13,10 +13,12 @@ import {
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
+import { useState } from "react";
 
 export default function SignUpPage() {
 
-    const router = useRouter()
+    const router = useRouter();
+     const [errorMsg, setErrorMsg] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +36,10 @@ export default function SignUpPage() {
     })
     
 
-    console.log({data, error})
+    console.log({data, error});
+    if (error) { // ✅ add
+      setErrorMsg(error.message || "Registration failed");
+    }
 
     if(!error) {
          await authClient.signOut();
@@ -114,13 +119,21 @@ export default function SignUpPage() {
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Submit
+            Register
           </Button>
           <Button type="reset" variant="secondary">
             Reset
           </Button>
         </div>
       </Form>
+
+ {errorMsg && (
+        <p className="text-red-500 text-sm text-center mt-2">
+          {errorMsg}
+        </p>
+      )}
+
+
 <p className="text-center">Or</p>
 
       <Button onClick={handlGoogleSignIn} variant="outline" className={'w-full'}><GrGoogle/> Login In With Google</Button>
