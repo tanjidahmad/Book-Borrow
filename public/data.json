@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "description": "The first adventure of Harry Potter as he discovers his magical heritage at Hogwarts.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An landmark book on modern physics and the origins of the universe.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship for writing better and cleaner code.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "The precursor to Lord of the Rings, following Bilbo Baggins on a quest to reclaim a kingdom.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780261103283-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "description": "An exploration of the history of humans from the Stone Age to the 21st century.",
+    "category": "Science",
+    "available_quantity": 15,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "description": "Essential lessons for modern software developers on career and technical skills.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "description": "Harry returns to Hogwarts only to find the school in grave danger from a mysterious monster.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/id/10521270-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "description": "The definitive guide to computer algorithms used by students and professionals.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A classic work on evolutionary biology and the role of genes in survival.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780192860927-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel about a society under constant surveillance and government control.",
+    "category": "Story",
+    "available_quantity": 20,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to programming and the JavaScript language.",
+    "category": "Tech",
+    "available_quantity": 11,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Gene: An Intimate History",
+    "author": "Siddhartha Mukherjee",
+    "description": "The story of the quest to decipher the master-code of human heredity.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781476733500-L.jpg"
+  }
+]
