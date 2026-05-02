@@ -4,7 +4,7 @@ import PhotoCard from "@/components/BookCard";
 const AllPhotosPage = async ({searchParams}) => {
     const {category} = await searchParams;
     console.log(category)
-    const res = await fetch('http://localhost:3000/data.json')
+    const res = await fetch('https://book-borrow-delta.vercel.app/data.json')
     const books = await res.json()
 
     const filteredbooks = category ? books.filter(book => book.category.toLowerCase() == category.toLowerCase()) : books

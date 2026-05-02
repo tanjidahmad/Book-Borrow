@@ -2,7 +2,7 @@ import { Button } from "@heroui/react";
 import Link from "next/link";
 
 const Category = async () => {
-  const res = await fetch("http://localhost:3000/cattegory.json");
+  const res = await fetch("https://book-borrow-delta.vercel.app/cattegory.json");
   const categories = await res.json();
   return (
     <div className="mb-5 space-x-3">

@@ -5,7 +5,7 @@ import BorrowButton from "@/components/BorrowButton";
 
 const PhotoDetailsPage = async ({params}) => {
     const {id} = await params;
-    const res = await fetch('http://localhost:3000/data.json')
+    const res = await fetch('https://book-borrow-delta.vercel.app/data.json')
     const books = await res.json()
 
     const book = books.find(p => p.id == id)

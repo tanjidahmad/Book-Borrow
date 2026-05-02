@@ -23,7 +23,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 // import TestimonialsSection from "@/components/TestimonialsSection";
 
 async function getBooks() {
-  const res = await fetch("http://localhost:3000/data.json", {
+  const res = await fetch("https://book-borrow-delta.vercel.app/data.json", {
     cache: "no-store",
   });
   return res.json();
