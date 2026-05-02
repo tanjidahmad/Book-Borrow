@@ -56,10 +56,10 @@ export default function SignUpPage() {
         })}
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    <Card className="border mx-auto w-full max-w-md sm:max-w-lg py-10 mt-5 px-4">
       <h1 className="text-center text-2xl font-bold">Register</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      <Form className="flex w-full flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
@@ -116,7 +116,7 @@ export default function SignUpPage() {
           <FieldError />
         </TextField>
 
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2">
           <Button type="submit">
             <Check />
             Register
@@ -134,9 +134,9 @@ export default function SignUpPage() {
       )}
 
 
-<p className="text-center">Or</p>
+<p className="text-center mt-4">Or</p>
 
-      <Button onClick={handlGoogleSignIn} variant="outline" className={'w-full'}><GrGoogle/> Login In With Google</Button>
+      <Button onClick={handlGoogleSignIn} variant="outline" className="w-full mt-3"><GrGoogle/> Login In With Google</Button>
 
     </Card>
   );
