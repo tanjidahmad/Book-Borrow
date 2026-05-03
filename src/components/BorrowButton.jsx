@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 import { Button } from "@heroui/react";
+import toast from "react-hot-toast";
 
 export default function BorrowButton() {
   const router = useRouter();
@@ -19,7 +20,8 @@ export default function BorrowButton() {
       return;
     }
 
-    setMessage("Book Borrowed Successfully!");
+   
+    toast.success("Book Borrowed Successfully!");
   };
 
    return (

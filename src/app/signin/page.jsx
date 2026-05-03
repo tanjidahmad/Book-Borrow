@@ -13,8 +13,10 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { GrGoogle } from "react-icons/gr";
+import { useState } from "react"; 
 
 export default function SignInPage() {
+   const [errorMsg, setErrorMsg] = useState("");
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,7 +30,8 @@ export default function SignInPage() {
     });
 
      if (error) {
-    alert(error.message);
+    // alert(error.message);
+      setErrorMsg(error.message);
   }
 
   if (data) {
@@ -111,7 +114,11 @@ export default function SignInPage() {
           </Button>
         </div>
       </Form>
-      
+      {errorMsg && (
+        <p className="text-red-500 text-sm text-center mt-2">
+          {errorMsg}
+        </p>
+      )}
 
       <p className="text-center mt-4">Or</p>
 
