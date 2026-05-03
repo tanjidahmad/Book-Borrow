@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
+import { Button } from "@heroui/react";
 
 export default function BorrowButton() {
   const router = useRouter();
@@ -24,12 +25,12 @@ export default function BorrowButton() {
    return (
     <div> {/* 🔧 ADD wrapper */}
 
-      <button
+      <Button
         onClick={handleBorrow}
-        className="btn btn-primary w-fit"
+        variant="outline"
       >
         Borrow This Book
-      </button>
+      </Button>
 
       {/* 🔧 ADD message show */}
       {message && (
