@@ -100,7 +100,7 @@
 import Category from "@/components/Category";
 import BookCard from "@/components/BookCard";
 
-const AllPhotosPage = async ({ searchParams }) => {
+const AllBooksPage = async ({ searchParams }) => {
   const { category, search } =await searchParams || {};
 
   const res = await fetch("https://book-borrow-delta.vercel.app/data.json");
@@ -170,4 +170,4 @@ const AllPhotosPage = async ({ searchParams }) => {
   );
 };
 
-export default AllPhotosPage;
+export default AllBooksPage;

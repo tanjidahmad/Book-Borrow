@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { FaBook } from "react-icons/fa";
+import { FaBook,FaPhoneAlt, FaEnvelope  } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -41,15 +41,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* 🟡 Company */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-semibold mb-3">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/terms">Terms</Link></li>
-            </ul>
-          </div>
+          {/* 🔵 Contact */}
+<div className="flex justify-center sm:justify-start">
+  <div className="border-2 border-orange-400 rounded-xl p-4 w-56 bg-gray-50 dark:bg-[#111] shadow-sm">
+    
+    <h3 className="font-semibold mb-3 text-gray-800 dark:text-white">
+      Contact
+    </h3>
+
+    <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+      
+      <div className="flex items-center gap-2">
+        <FaPhoneAlt className="text-orange-500" />
+        <span>+123 456 7890</span>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <FaEnvelope className="text-orange-500" />
+        <span>support@gem.com</span>
+      </div>
+
+    </div>
+  </div>
+</div>
 
           {/* 🔴 CTA */}
           <div className="space-y-4 text-center sm:text-left">
