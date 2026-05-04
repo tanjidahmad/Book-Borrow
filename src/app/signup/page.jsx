@@ -14,6 +14,7 @@ import {
 import { useRouter } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function SignUpPage() {
 
@@ -37,7 +38,7 @@ export default function SignUpPage() {
     
 
     console.log({data, error});
-    if (error) { // ✅ add
+    if (error) { 
       setErrorMsg(error.message || "Registration failed");
     }
 
@@ -132,6 +133,13 @@ export default function SignUpPage() {
           {errorMsg}
         </p>
       )}
+
+      <p className="text-center mt-4">
+  Already have an account?{" "}
+  <Link href="/signin" className="text-primary">
+    Login
+  </Link>
+</p>
 
 
 <p className="text-center mt-4">Or</p>
