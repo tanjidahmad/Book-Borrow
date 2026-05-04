@@ -31,7 +31,7 @@ const Banner = () => {
 
           {/* Button Animation */}
           <div className="flex flex-wrap gap-3 animate__animated animate__zoomIn animate__delay-2s">
-            <Link href="/all-books">
+            <Link href="/all-books  prefetch">
               <Button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 hover:scale-105 transition">
                 Browse Now
               </Button>
