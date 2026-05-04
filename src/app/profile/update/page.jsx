@@ -15,6 +15,17 @@ export default function UpdateProfilePage() {
     const name = e.target.name.value;
     const image = e.target.image.value;
 
+    if (!name) {
+    setErrorMsg("Name is required");
+    return;
+  }
+
+   const updateData = { name };
+
+  if (image) {
+    updateData.image = image;
+  }
+
     const res = await authClient.updateUser({ name, image });
 
      if (res?.error) {
