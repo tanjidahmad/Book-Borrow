@@ -17,14 +17,17 @@ export default function UpdateProfilePage() {
 
     const res = await authClient.updateUser({ name, image });
 
-    if (res?.error) {
+     if (res?.error) {
+    if (res.error.message === "Unauthorized") {
+      setErrorMsg("Please login first"); 
+    } else {
       setErrorMsg(res.error.message || "Update failed");
-      return;
     }
+    return;
+  }
 
-    // ✅ success হলে profile এ back
-    router.push("/profile");
-  };
+  router.push("/profile");
+};
 
   return (
     <div className="flex justify-center items-center min-h-[70vh] px-4">
