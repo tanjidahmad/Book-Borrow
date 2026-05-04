@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { FaBook,FaPhoneAlt, FaEnvelope  } from "react-icons/fa";
+import { FaBook,FaPhoneAlt, FaEnvelope ,FaFacebook, FaTwitter, FaInstagram  } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -94,6 +94,12 @@ const Footer = () => {
           <div className="flex gap-4">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
+
+             <div className="flex gap-3 text-lg">
+    <FaFacebook />
+    <FaTwitter />
+    <FaInstagram />
+  </div>
           </div>
 
         </div>
