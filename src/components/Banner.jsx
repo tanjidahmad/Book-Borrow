@@ -21,7 +21,7 @@ const Banner = () => {
           
           {/* Title Animation */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 max-w-xl sm:max-w-2xl animate__animated animate__fadeInDown">
-            Explore the World of Books
+            Find Your Next Read
           </h1>
 
           {/* Subtitle Animation */}

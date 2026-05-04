@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDownload } from "react-icons/bi";
 import { FaHeart } from "react-icons/fa6";
-const BookCard = ({book}) => {
+const BookCard = ({book,buttonText = "Details"}) => {
     return (
         <Card className="border rounded-xl p-3 sm:p-4 hover:shadow-lg transition">
             <div className="relative w-full aspect-square">
@@ -24,7 +24,9 @@ const BookCard = ({book}) => {
 
           
 
-     <Link href={`/all-books/${book.id}`}>      <Button variant="outline" className='w-full mt-3 text-sm'>Details</Button></Link>
+     <Link href={`/all-books/${book.id}`}>      <Button variant="outline" className='w-full mt-3 text-sm'>
+  {buttonText}
+</Button></Link>
             
         </Card>
     );
