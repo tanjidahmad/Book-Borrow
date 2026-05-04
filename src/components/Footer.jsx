@@ -16,10 +16,10 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        {/* 🔥 Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* 🔵 Brand */}
+          
           <div className="space-y-4 text-center sm:text-left">
             <Link href="/" className="flex justify-center sm:justify-start items-center gap-2">
               <FaBook className="text-green-600 text-xl" />
@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* 🟢 Explore */}
+         
           <div className="text-center sm:text-left">
             <h3 className="font-semibold mb-3">Explore</h3>
             <ul className="space-y-2 text-sm">
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* 🔵 Contact */}
+          
 <div className="flex justify-center sm:justify-start">
   <div className="border-2 border-orange-400 rounded-xl p-4 w-56 bg-gray-50 dark:bg-[#111] shadow-sm">
     
@@ -65,7 +65,7 @@ const Footer = () => {
   </div>
 </div>
 
-          {/* 🔴 CTA */}
+          
           <div className="space-y-4 text-center sm:text-left">
             <h3 className="font-semibold">Start Reading</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Divider */}
         <div className="mt-10 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
 
-        {/* 🔥 Bottom */}
+        
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           
           <p className="text-center sm:text-left">

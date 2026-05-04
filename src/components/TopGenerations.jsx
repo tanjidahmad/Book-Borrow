@@ -1,5 +1,5 @@
 import BookCard from "./BookCard";
-import PhotoCard from "./BookCard";
+
 
 const TopGenerations = async () => {
     const res = await fetch('https://book-borrow-delta.vercel.app/data.json')

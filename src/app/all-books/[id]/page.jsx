@@ -15,7 +15,7 @@ const PhotoDetailsPage = async ({params}) => {
     return (
   <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8">
 
-    {/* 📚 LEFT: IMAGE */}
+  
     <div>
       <Image
         src={book?.image_url}
@@ -26,7 +26,7 @@ const PhotoDetailsPage = async ({params}) => {
       />
     </div>
 
-    {/* 📖 RIGHT: DETAILS */}
+    
     <div className="flex flex-col justify-center">
 
       <h1 className="text-3xl font-bold mb-4">{book?.title}</h1>

@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 const OutfitFont = Outfit({
   subsets: ["latin"],
 });
-// english alph(latin), greek, arabic, bengali
+
 
 
 

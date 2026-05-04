@@ -22,20 +22,7 @@ const BookCard = ({book}) => {
                 <h2 className="font-medium text-sm sm:text-base line-clamp-2">{book.title}</h2>
             </div>
 
-           {/* <div className="flex gap-5">
-             <div className="flex items-center gap-2">
-                <p><FaHeart /></p>
-                <p>{book.likes}</p>
-            </div>
-
-            <Separator orientation="vertical"/>
-
-
-               <div className="flex items-center gap-2">
-                <p><BiDownload /></p>
-                <p>{book.downloads}</p>
-            </div>
-           </div> */}
+          
 
      <Link href={`/all-books/${book.id}`}>      <Button variant="outline" className='w-full mt-3 text-sm'>Details</Button></Link>
             

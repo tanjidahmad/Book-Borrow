@@ -11,7 +11,7 @@ export default function BorrowButton() {
    const [message, setMessage] = useState(""); 
 
   const handleBorrow = async () => {
-    // 🔥 real session check
+   
     const session = await authClient.getSession();
 
     if (!session?.data) {
@@ -25,7 +25,7 @@ export default function BorrowButton() {
   };
 
    return (
-    <div> {/* 🔧 ADD wrapper */}
+    <div> 
 
       <Button
         onClick={handleBorrow}
@@ -34,7 +34,7 @@ export default function BorrowButton() {
         Borrow This Book
       </Button>
 
-      {/* 🔧 ADD message show */}
+     
       {message && (
         <p className="mt-2 text-sm text-green-600">
           {message}
