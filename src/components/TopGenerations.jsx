@@ -2,7 +2,9 @@ import BookCard from "./BookCard";
 
 
 const TopGenerations = async () => {
-    const res = await fetch('https://book-borrow-delta.vercel.app/data.json')
+    const res = await fetch('https://book-borrow-delta.vercel.app/data.json',{
+    next: { revalidate: 60 },
+  })
     const books = await res.json()
     const topbooks = books.slice(0, 4)
 

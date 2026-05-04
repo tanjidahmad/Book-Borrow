@@ -6,7 +6,9 @@ import BookCard from "@/components/BookCard";
 const AllBooksPage = async ({ searchParams }) => {
   const { category, search } =await searchParams || {};
 
-  const res = await fetch("https://book-borrow-delta.vercel.app/data.json");
+  const res = await fetch("https://book-borrow-delta.vercel.app/data.json",{
+    next: { revalidate: 60 },
+  });
   const books = await res.json();
 
   let filteredbooks = books;

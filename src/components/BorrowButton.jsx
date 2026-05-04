@@ -16,7 +16,8 @@ export default function BorrowButton() {
 
     if (!session?.data) {
        setMessage("Please login to borrow this book");
-      router.push("/signin");
+      // router.push("/signin");
+      router.replace("/signin");
       return;
     }
 
